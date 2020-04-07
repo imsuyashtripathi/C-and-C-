@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int number,even=0,odd=0,diff=0,num=0,term=1;
+	scanf("%d",&number);
+	num=number;
+	while(num!=0)
+	{
+		if(term%2==0)
+		{
+		even=even+num%10;	
+		}
+		else
+		{
+			odd=odd+num%10;
+		}
+		num=num/10;
+		term++;
+	}
+	printf("odd:%d\n",even);
+	printf("even:%d\n",odd);
+	diff=even-odd;
+	if(diff>0)
+	{
+	printf("result:%d",diff);
+    }
+    else
+    {
+    	printf("result:%d",diff);
+	}
+}
